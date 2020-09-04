@@ -15,6 +15,12 @@ function showError(error) {
 
 axios.interceptors.request.use(config => {
   config.loading && $.loading('show');
+
+  const token = window.localStorage.getItem('token');
+  if (token) {
+    config.headers.Authorization = 'Bearer ' + window.localStorage.getItem('token');
+  }
+
   return config;
 });
 
