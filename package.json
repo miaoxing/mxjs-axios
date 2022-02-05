@@ -1,6 +1,6 @@
 {
   "name": "@mxjs/axios",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "axios": "^0.19.1",
-    "miaoxing": "^0.4.0"
+    "miaoxing": "^0.4.1"
   },
   "devDependencies": {
-    "@miaoxing/dev": "^8.0.1"
+    "@miaoxing/dev": "^8.1.0"
   },
   "jest": {
     "preset": "jest-preset-miaoxing"
