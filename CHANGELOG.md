@@ -1,3 +1,19 @@
+## [0.1.11](https://github.com/miaoxing/mxjs-axios/compare/v0.1.10...v0.1.11) (2022-06-01)
+
+
+### Bug Fixes
+
+* **axios:** 解决 `axios.interceptors.response` 失效 ([7050c87](https://github.com/miaoxing/mxjs-axios/commit/7050c874998dcd063d95996d5b7ed1b8b970f2c5))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.1` to `0.4.2`
+* **@miaoxing/dev:** upgrade from `8.1.0` to `8.1.1`
+
 ## [0.1.10](https://github.com/miaoxing/mxjs-axios/compare/v0.1.9...v0.1.10) (2022-02-05)
 
 
