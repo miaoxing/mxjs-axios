@@ -28,7 +28,7 @@ axios.interceptors.response.use(response => {
   // 未登录,跳转到登录地址
   if (typeof response.data.code !== 'undefined' && response.data.code === UNAUTHORIZED_CODE) {
     setTimeout(function () {
-      window.location.href = response.data.next;
+      window.location.href = $.fullUrl(response.data.next);
     }, TIPS_DELAY);
   }
 
