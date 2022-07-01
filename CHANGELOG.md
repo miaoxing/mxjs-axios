@@ -1,3 +1,29 @@
+# [1.0.0](https://github.com/miaoxing/mxjs-axios/compare/v0.1.11...v1.0.0) (2022-07-01)
+
+
+### Code Refactoring
+
+* **axios:** 跳转地址改为前台 `$.fullUrl` 去生成，后台只需返回路径 ([3d7f58e](https://github.com/miaoxing/mxjs-axios/commit/3d7f58ec33df2da8dbee75db6e9028d76cbd90b9))
+
+
+### Features
+
+* 发布 1.0.0 [release 1.0.0] ([767ad7e](https://github.com/miaoxing/mxjs-axios/commit/767ad7e97d01eaebf6eb7158da87e844a97c8c4c))
+
+
+### BREAKING CHANGES
+
+* **axios:** 跳转地址改为前台 `$.fullUrl` 去生成，后台只需返回路径
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.2` to `0.4.3`
+* **@miaoxing/dev:** upgrade from `8.1.1` to `8.1.2`
+
 ## [0.1.11](https://github.com/miaoxing/mxjs-axios/compare/v0.1.10...v0.1.11) (2022-06-01)
 
 
