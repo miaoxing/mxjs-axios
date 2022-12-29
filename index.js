@@ -2,8 +2,6 @@ import axios from 'axios';
 import $ from 'miaoxing';
 
 const NOT_FOUND = 404;
-const UNAUTHORIZED_CODE = 401;
-const TIPS_DELAY = 3000;
 
 function showError(error) {
   if (error.config && error.config.ignoreError) {
@@ -25,13 +23,6 @@ axios.interceptors.request.use(config => {
 });
 
 axios.interceptors.response.use(response => {
-  // 未登录,跳转到登录地址
-  if (typeof response.data.code !== 'undefined' && response.data.code === UNAUTHORIZED_CODE) {
-    setTimeout(function () {
-      window.location.href = $.fullUrl(response.data.next);
-    }, TIPS_DELAY);
-  }
-
   $.loading('hide');
   return response;
 }, error => {
