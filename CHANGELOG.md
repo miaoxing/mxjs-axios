@@ -1,3 +1,24 @@
+# [2.0.0](https://github.com/miaoxing/mxjs-axios/compare/v1.0.2...v2.0.0) (2023-01-01)
+
+
+### Code Refactoring
+
+* **axios:** 移除未登录跳转功能，应由具体应用执行跳转或弹出登录框 ([1f59a8b](https://github.com/miaoxing/mxjs-axios/commit/1f59a8bef76a1daf7186737d4365c209f62a316a))
+
+
+### BREAKING CHANGES
+
+* **axios:** 移除未登录跳转功能，应由具体应用执行跳转或弹出登录框
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.5` to `0.4.6`
+* **@miaoxing/dev:** upgrade from `8.1.3` to `8.2.0`
+
 ## [1.0.2](https://github.com/miaoxing/mxjs-axios/compare/v1.0.1...v1.0.2) (2022-12-01)
 
 
