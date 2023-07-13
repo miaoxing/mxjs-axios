@@ -11,8 +11,18 @@ function showError(error) {
   $.err(error.response.status === NOT_FOUND ? '很抱歉，您访问的页面不存在，请检查后再试' : '很抱歉，请求出错，请稍后再试');
 }
 
-axios.interceptors.request.use(config => {
+const showLoading = (config) => {
   config.loading && $.loading('show');
+  config.onLoadingChange?.(true);
+};
+
+const hideLoading = (config) => {
+  config.loading && $.loading('hide');
+  config.onLoadingChange?.(false);
+};
+
+axios.interceptors.request.use(config => {
+  showLoading(config);
 
   const token = window.localStorage.getItem('token');
   if (token) {
@@ -23,10 +33,10 @@ axios.interceptors.request.use(config => {
 });
 
 axios.interceptors.response.use(response => {
-  $.loading('hide');
+  hideLoading(response.config);
   return response;
 }, error => {
-  $.loading('hide');
+  hideLoading(error.config);
   showError(error);
   return Promise.reject(error);
 });
