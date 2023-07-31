@@ -1,3 +1,19 @@
+# [2.1.0](https://github.com/miaoxing/mxjs-axios/compare/v2.0.1...v2.1.0) (2023-07-31)
+
+
+### Features
+
+* **axios:** 增加 `onLoadingChange` 选项，在加载前后触发 ([6c5cd89](https://github.com/miaoxing/mxjs-axios/commit/6c5cd8911e637a352a1712410169f906b001160f))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.7` to `0.4.8`
+* **@miaoxing/dev:** upgrade from `8.2.1` to `8.2.2`
+
 ## [2.0.1](https://github.com/miaoxing/mxjs-axios/compare/v2.0.0...v2.0.1) (2023-05-31)
 
 
