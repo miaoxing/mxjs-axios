@@ -1,3 +1,14 @@
+## [2.1.4](https://github.com/miaoxing/mxjs-axios/compare/v2.1.3...v2.1.4) (2024-01-08)
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.11` to `0.4.12`
+* **@miaoxing/dev:** upgrade from `9.0.0` to `9.1.0`
+
 ## [2.1.3](https://github.com/miaoxing/mxjs-axios/compare/v2.1.2...v2.1.3) (2023-12-31)
 
 
