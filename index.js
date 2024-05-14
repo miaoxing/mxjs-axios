@@ -24,6 +24,12 @@ const hideLoading = (config) => {
 axios.interceptors.request.use(config => {
   showLoading(config);
 
+  // @experimental 考虑改为环境变量
+  // 如果是相对地址，转换为 api 地址
+  if (!config.url.startsWith('/') && !config.url.startsWith('http')) {
+    config.url = $.apiUrl(config.url);
+  }
+
   const token = window.localStorage.getItem('token');
   if (token) {
     config.headers.Authorization = 'Bearer ' + window.localStorage.getItem('token');
