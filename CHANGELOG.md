@@ -1,3 +1,18 @@
+# [2.2.0](https://github.com/miaoxing/mxjs-axios/compare/v2.1.6...v2.2.0) (2024-05-30)
+
+
+### Features
+
+* **axios, experimental:** 如果传入的 URL 是相对地址，转换为 api 地址 ([05a4402](https://github.com/miaoxing/mxjs-axios/commit/05a4402aff39d0e589e06ddac1280794f6c6debf))
+
+
+
+
+
+### Dependencies
+
+* **miaoxing:** upgrade from `0.4.14` to `0.4.15`
+
 ## [2.1.6](https://github.com/miaoxing/mxjs-axios/compare/v2.1.5...v2.1.6) (2024-05-01)
 
 
